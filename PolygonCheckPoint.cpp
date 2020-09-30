@@ -64,12 +64,12 @@ bool checkInside(Point poly[], int n, Point p) {
 
 int main() {
    
-   Point polygon[] = {{0, 0}, {10, 0}, {10, 10}, {0, 10}};
-   Point p = {5, 3};
+   Point polygon[] = {{1, 0}, {8, 3}, {8, 8}, {1, 5}};
+   Point p = {3, 5};
    int n = 4;
 
    if(checkInside(polygon, n, p))
-      cout << "Point is inside.";
+      cout << "True";
    else
-      cout << "Point is outside.";
+      cout << "False";
 }
